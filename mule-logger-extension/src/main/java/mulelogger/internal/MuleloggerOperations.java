@@ -31,17 +31,17 @@ public class MuleloggerOperations {
    * Example of an operation that uses the configuration and a connection instance to perform some action.
    */
  // @MediaType(value = ANY, strict = false)
- // public String retrieveInfo(@Config BfusaloggerConfiguration configuration, @Connection BfusaloggerConnection connection){
+ // public String retrieveInfo(@Config MuleloggerConfiguration configuration, @Connection MuleloggerConnection connection){
  //   return "Using Configuration [" + configuration.getConfigId() + "] with Connection id [" + connection.getId() + "]";
  // }
   @MediaType(value = ANY, strict =false)
-  public void bfusaCustomLogger(@ParameterGroup(name = "AppLog") LoggingProperties loggingProperties,
+  public void MuleCustomLogger(@ParameterGroup(name = "AppLog") LoggingProperties loggingProperties,
 		  @ParameterGroup(name="HttpLog") LoggingHttpProperties logHttpProperties,
 		  @ParameterGroup(name="Exception") LoggingExceptionProperties logExpProperties,
 		  @ParameterGroup(name="LocationInfo") LocationInfoProperties logLocationInfo,
 		  ComponentLocation locationInfo,
 		  @Config MuleloggerConfiguration logConfiguration){
-	      initLogger("com.bfusa.logger");
+	      initLogger("com.mule.logger");
 	  try {
 		  
 		  Gson jsonData = new GsonBuilder().setPrettyPrinting().create();

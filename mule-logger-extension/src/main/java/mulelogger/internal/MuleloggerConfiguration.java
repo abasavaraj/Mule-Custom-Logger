@@ -12,7 +12,7 @@ import org.mule.runtime.extension.api.annotation.param.display.Summary;
  * operations since they represent something core from the extension.
  */
 @Operations(MuleloggerOperations.class)
-//@ConnectionProviders(BfusaloggerConnectionProvider.class)
+//@ConnectionProviders(MuleloggerConnectionProvider.class)
 public class MuleloggerConfiguration {
 
   @Parameter

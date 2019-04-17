@@ -9,8 +9,8 @@ import org.mule.runtime.extension.api.annotation.dsl.xml.Xml;
  * This is the main class of an extension, is the entry point from which configurations, connection providers, operations
  * and sources are going to be declared.
  */
-@Xml(prefix = "bfusa-logger")
-@Extension(name = "Bfusa-logger")
+@Xml(prefix = "mule-logger")
+@Extension(name = "mule-logger")
 @Configurations(MuleloggerConfiguration.class)
 public class MuleloggerExtension {
 

@@ -1,15 +1,15 @@
 {
-  "name": "Bfusa-logger",
+  "name": "mule-logger",
   "description": "This is the main class of an extension, is the entry point from which configurations, connection providers, operations and sources are going to be declared.",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "vendor": "Mulesoft",
   "category": "COMMUNITY",
   "xmlDsl": {
-    "prefix": "bfusa-logger",
-    "namespace": "http://www.mulesoft.org/schema/mule/bfusa-logger",
-    "schemaLocation": "http://www.mulesoft.org/schema/mule/bfusa-logger/current/mule-bfusa-logger.xsd",
-    "schemaVersion": "4.0.1",
-    "xsdFileName": "mule-bfusa-logger.xsd"
+    "prefix": "mule-logger",
+    "namespace": "http://www.mulesoft.org/schema/mule/mule-logger",
+    "schemaLocation": "http://www.mulesoft.org/schema/mule/mule-logger/current/mule-mule-logger.xsd",
+    "schemaVersion": "4.0.3",
+    "xsdFileName": "mule-mule-logger.xsd"
   },
   "resources": [],
   "subTypes": [],
@@ -21,7 +21,7 @@
     {
       "stereotype": {
         "type": "CONFIG",
-        "namespace": "BFUSA-LOGGER",
+        "namespace": "MULE-LOGGER",
         "parent": {
           "type": "MODULE_CONFIG",
           "namespace": "MULE"
@@ -976,7 +976,7 @@
               "modelProperties": {}
             }
           ],
-          "name": "bfusaCustomLogger",
+          "name": "MuleCustomLogger",
           "description": "Example of an operation that uses the configuration and a connection instance to perform some action.",
           "modelProperties": {},
           "kind": "operation"
@@ -997,7 +997,8 @@
   "notifications": [],
   "errors": [
     {
-      "error": "MULE:ANY",
+      "error": "MULE-LOGGER:RETRY_EXHAUSTED",
+      "parent": "MULE:RETRY_EXHAUSTED",
       "handleable": true
     },
     {
@@ -1006,18 +1007,17 @@
       "handleable": true
     },
     {
-      "error": "BFUSA-LOGGER:CONNECTIVITY",
+      "error": "MULE:ANY",
+      "handleable": true
+    },
+    {
+      "error": "MULE-LOGGER:CONNECTIVITY",
       "parent": "MULE:CONNECTIVITY",
       "handleable": true
     },
     {
       "error": "MULE:CONNECTIVITY",
       "parent": "MULE:ANY",
-      "handleable": true
-    },
-    {
-      "error": "BFUSA-LOGGER:RETRY_EXHAUSTED",
-      "parent": "MULE:RETRY_EXHAUSTED",
       "handleable": true
     }
   ],

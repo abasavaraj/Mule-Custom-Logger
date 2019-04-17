@@ -3,10 +3,10 @@
     "id": "java",
     "attributes": {
       "type": "mulelogger.internal.MuleloggerExtension",
-      "version": "4.0.1"
+      "version": "4.0.3"
     }
   },
-  "name": "Bfusa-logger",
+  "name": "mule-logger",
   "requiredProduct": "MULE",
   "classLoaderModelLoaderDescriptor": {
     "id": "mule",

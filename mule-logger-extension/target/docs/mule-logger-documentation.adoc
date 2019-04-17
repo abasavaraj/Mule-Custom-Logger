@@ -1,5 +1,5 @@
 :toc:               left
-:toc-title:         Bfusa-logger Module
+:toc-title:         mule-logger Module
 :toclevels:         2
 :last-update-label!:
 :docinfo:
@@ -7,7 +7,7 @@
 :icons: font
 
 
-= Bfusa-logger Module Documentation Reference
+= mule-logger Module Documentation Reference
 
 +++
 This is the main class of an extension, is the entry point from which configurations, connection providers, operations and sources are going to be declared.
@@ -38,15 +38,15 @@ Default configuration
 
 
 ==== Associated Operations
-* <<bfusaCustomLogger>> {nbsp}
+* <<MuleCustomLogger>> {nbsp}
 
 
 
 == Operations
 
-[[bfusaCustomLogger]]
-=== Bfusa Custom Logger
-`<bfusa-logger:bfusa-custom-logger>`
+[[MuleCustomLogger]]
+=== Mule Custom Logger
+`<mule-logger:mule-custom-logger>`
 
 +++
 Example of an operation that uses the configuration and a connection instance to perform some action.
