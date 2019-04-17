@@ -11,7 +11,6 @@ import com.google.gson.GsonBuilder;
 import mulelogger.model.LocationInfoProperties;
 import mulelogger.model.LoggingExceptionProperties;
 import mulelogger.model.LoggingHttpProperties;
-import mulelogger.model.LoggingLevelProperties;
 import mulelogger.model.LoggingProperties;
 
 import org.mule.runtime.extension.api.annotation.param.MediaType;
@@ -103,17 +102,26 @@ public class MuleloggerOperations {
    */
   	 protected void logLevel(String logMessage, String logLevel) {
   		 
-  		if(LoggingLevelProperties.LogLevel.ERROR.logLevel().equals(logLevel)) {
-  			Logger.error(logMessage);
-  		} else if(LoggingLevelProperties.LogLevel.WARN.logLevel().equals(logLevel)) {
-  			Logger.warn(logMessage);
-  		}else if(LoggingLevelProperties.LogLevel.DEBUG.logLevel().equals(logLevel)) {
-  			Logger.debug(logMessage);
-  		}else if(LoggingLevelProperties.LogLevel.TRACE.logLevel().equals(logLevel)) {
-  			Logger.trace(logMessage);
-  		} else {
-  			Logger.info(logMessage);
-  		}
+  		 switch(logLevel) {
+  		 
+  		 	case "TRACE":
+  		 		Logger.trace(logMessage);
+  		 		break;
+  		 	case "ERROR":
+  		 		Logger.error(logMessage);
+  		 		break;
+  		 	case "WARN":
+  		 		Logger.warn(logMessage);
+  		 		break;
+  		 	case "DEBUG":
+  		 		Logger.debug(logMessage);
+  		 		break;
+  		 	case "INFO":
+  		 		Logger.info(logMessage);
+  		 		break;
+  		 	default:
+  		 		break;
+  		 }
   	 }
   
 }

@@ -1,14 +1,14 @@
 {
   "name": "mule-logger",
   "description": "This is the main class of an extension, is the entry point from which configurations, connection providers, operations and sources are going to be declared.",
-  "version": "4.0.3",
+  "version": "4.0.5",
   "vendor": "Mulesoft",
   "category": "COMMUNITY",
   "xmlDsl": {
     "prefix": "mule-logger",
     "namespace": "http://www.mulesoft.org/schema/mule/mule-logger",
     "schemaLocation": "http://www.mulesoft.org/schema/mule/mule-logger/current/mule-mule-logger.xsd",
-    "schemaVersion": "4.0.3",
+    "schemaVersion": "4.0.5",
     "xsdFileName": "mule-mule-logger.xsd"
   },
   "resources": [],
