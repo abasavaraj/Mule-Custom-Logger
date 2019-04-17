@@ -80,10 +80,17 @@ public class MuleloggerOperations {
           }
           
           if(logConfiguration.getappEnableLogging()== true) {
-        	  logLevel(jsonData.toJson(logContent), loggingProperties.getLevel());
-          }else if(loggingProperties.getLevel() !="INFO") {
-        	  logLevel(jsonData.toJson(logContent), loggingProperties.getLevel());
+        	  logLevel(jsonData.toJson(logContent), loggingProperties.getLevel()); 
           }
+          else {
+        	  if(loggingProperties.getLevel().equals("INFO") ) {
+        		  logLevel("INFO Level Logging has been Disabled", loggingProperties.getLevel());
+        	  }
+        	  else {
+        		  
+        		  logLevel(jsonData.toJson(logContent), loggingProperties.getLevel());
+        	  }
+        }
 	  }
 	  catch(Exception e)
 	  {

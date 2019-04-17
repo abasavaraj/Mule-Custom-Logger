@@ -3,7 +3,7 @@
     "id": "java",
     "attributes": {
       "type": "mulelogger.internal.MuleloggerExtension",
-      "version": "4.0.5"
+      "version": "4.0.10"
     }
   },
   "name": "mule-logger",

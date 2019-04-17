@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>97cb9822-2efd-49e3-8312-c70fbd292d0a</groupId>
     <artifactId>mule-logger</artifactId>
-    <version>4.0.5</version>
+    <version>4.0.10</version>
     <packaging>mule-extension</packaging>
     <name>mule-logger-extension</name>
 
