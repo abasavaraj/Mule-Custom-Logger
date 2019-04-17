@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension-documentation>
+    <configs>
+        <config name="config">
+            <description><![CDATA[Default configuration]]></description>
+            <parameters>
+                <parameter name="appName">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="appVersion">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="env">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="appType">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="appEnableLogging">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="expirationPolicy">
+                    <description><![CDATA[Configures the minimum amount of time that a dynamic configuration instance can remain idle before the runtime considers it eligible for expiration. This does not mean that the platform will expire the instance at the exact moment that it becomes eligible. The runtime will actually purge the instances when it sees it fit.]]></description>
+                </parameter>
+            </parameters>
+        </config>
+    </configs>
+    <connections/>
+    <extension name="Bfusa-logger">
+        <description><![CDATA[This is the main class of an extension, is the entry point from which configurations, connection providers, operations and sources are going to be declared.]]></description>
+        <parameters/>
+    </extension>
+    <operations>
+        <operation name="bfusaCustomLogger">
+            <description><![CDATA[Example of an operation that uses the configuration and a connection instance to perform some action.]]></description>
+            <parameters>
+                <parameter name="masterCorrelation_ID">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="currentCorrelation_ID">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="message">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="level">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="trace">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="sourceSystem">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="targetSystem">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="transactionDateTime">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="payload">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="clientID">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="relativePath">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="method">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="localAddress">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="remoteAddress">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="exStatusCode">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="exMessage">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="exDetail">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="logLocationInfo">
+                    <description><![CDATA[]]></description>
+                </parameter>
+            </parameters>
+        </operation>
+    </operations>
+    <sources/>
+    <types/>
+</extension-documentation>
