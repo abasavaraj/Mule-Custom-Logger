@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>42512fa5-940f-4689-b1d5-c2a137c32156</groupId>
-    <artifactId>bfusa-logger</artifactId>
-    <version>4.0.0</version>
+    <groupId>97cb9822-2efd-49e3-8312-c70fbd292d0a</groupId>
+    <artifactId>mule-logger</artifactId>
+    <version>4.0.1</version>
     <packaging>mule-extension</packaging>
     <name>mule-logger-extension</name>
 
